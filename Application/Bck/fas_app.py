@@ -4,7 +4,7 @@ import joblib
 import pandas as pd
 
 # Load the trained model
-model = joblib.load("xgb_pipeline_final.pkl")
+model = joblib.load("../../Model/xgboost_classifier_model_ultimate.pkl")
 
 # Initialize FastAPI app
 fas_app = FastAPI()
@@ -32,8 +32,8 @@ class PhoneData(BaseModel):
     touch_screen: int
     wifi: int
     int_memory: int
-    total_pixels: int
-    total_camera: int
+    total_pixels: int  # Included in request but not used for prediction
+    total_camera: int  # Included in request but not used for prediction
 
 # Root endpoint
 @fas_app.get("/")
@@ -45,6 +45,9 @@ def read_root():
 def predict(data: PhoneData):
     # Convert incoming data to a pandas DataFrame
     input_data = pd.DataFrame([data.dict()])
+
+    # Drop features not used by the model
+    input_data = input_data.drop(columns=["total_pixels", "total_camera"])
 
     # Make a prediction using the loaded model
     prediction = model.predict(input_data)

@@ -1,0 +1,84 @@
+{
+  "slider_fields": {
+    "phone_id": [
+      1,
+      2007
+    ],
+    "battery_power": [
+      501,
+      1998
+    ],
+    "clock_speed": [
+      0,
+      3
+    ],
+    "m_dep": [
+      0,
+      1
+    ],
+    "mobile_wt": [
+      80,
+      200
+    ],
+    "n_cores": [
+      1,
+      8
+    ],
+    "ram": [
+      256,
+      3998
+    ],
+    "talk_time": [
+      2,
+      20
+    ],
+    "price_range": [
+      0,
+      3
+    ],
+    "sc_h": [
+      5,
+      19
+    ],
+    "sc_w": [
+      0,
+      18
+    ],
+    "blue": [
+      0,
+      1
+    ],
+    "dual_sim": [
+      0,
+      1
+    ],
+    "four_g": [
+      0,
+      1
+    ],
+    "touch_screen": [
+      0,
+      1
+    ],
+    "wifi": [
+      0,
+      1
+    ],
+    "int_memory": [
+      2,
+      64
+    ],
+    "total_camera": [
+      0,
+      39
+    ],
+    "total_pixels": [
+      0,
+      3886306
+    ],
+    "screen_ratio": [
+      0,
+      19
+    ]
+  }
+}
