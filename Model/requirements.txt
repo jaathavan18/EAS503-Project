@@ -1,0 +1,16 @@
+fastapi[standard]
+uvicorn
+dill
+numpy
+pandas
+pydantic
+scikit-learn
+joblib
+xgboost
+matplotlib
+seaborn
+imbalanced-learn
+ydata-profiling
+mlflow
+streamlit
+requests
