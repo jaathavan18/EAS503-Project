@@ -1,3 +1,0 @@
-Experiment,Model,F1,Accuracy,Overfitting
-Experiment 6,Gradient Boosting,0.7808039482813482,0.7786069651741293,False
-Experiment 7,Random Forest with PCA,0.9090206368256787,0.9079601990049752,False
