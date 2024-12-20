@@ -3,8 +3,8 @@ from pydantic import BaseModel
 import joblib
 import pandas as pd
 
-# Load the trained model
-model = joblib.load("../../Model/xgboost_classifier_model_ultimate.pkl")
+# Load the trained model pipeline
+model = joblib.load("../../Model/random_forest_pca_full_pipeline.joblib")
 
 # Initialize FastAPI app
 fas_app = FastAPI()
@@ -26,8 +26,6 @@ class PhoneData(BaseModel):
     touch_screen: int
     wifi: int
     int_memory: float
-    total_camera: int
-    total_pixels: int
 
 # Root endpoint
 @fas_app.get("/")
@@ -39,15 +37,6 @@ def read_root():
 def predict(data: PhoneData):
     # Convert incoming data to a pandas DataFrame
     input_data = pd.DataFrame([data.model_dump()])
-
-    # Ensure input matches model training features
-    expected_features = [
-        'battery_power', 'clock_speed', 'm_dep', 'mobile_wt', 'n_cores', 'ram', 'talk_time',
-        'sc_h', 'sc_w', 'blue', 'dual_sim', 'four_g', 'touch_screen', 'wifi', 'int_memory',
-        'total_camera', 'total_pixels'
-    ]
-    if not all(feature in input_data.columns for feature in expected_features):
-        return {"error": f"Input data is missing required features: {expected_features}"}
 
     # Make a prediction using the loaded model
     try:
