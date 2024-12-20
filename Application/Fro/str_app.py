@@ -35,7 +35,7 @@ if st.button('Predict'):
     data = json.dumps(user_options, indent=2)
     try:
         # Replace the endpoint URL with your FastAPI prediction endpoint
-        r = requests.post('http://127.0.0.1:8000/predict/', data=data, headers={'Content-Type': 'application/json'})
+        r = requests.post('http://134.122.7.104:8002/predict/', data=data, headers={'Content-Type': 'application/json'})
         r.raise_for_status()  # Raise an error if the request failed
         st.write("Input Data:")
         st.write(user_options)
