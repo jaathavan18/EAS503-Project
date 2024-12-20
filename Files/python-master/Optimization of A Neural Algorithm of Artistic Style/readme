@@ -1,1 +1,0 @@
-Before starting the code, please use the cmd "pip install -r requirements.txt" to make sure the env is installed. Than use python3 "final_code.py --content PHOTO_NAME --styles STYLE_IMAGE_NAME --output OUTPUT_FILE_NAME: to execute the code.

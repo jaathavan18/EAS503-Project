@@ -1,9 +1,0 @@
-jupyter
-numpy
-pandas
-scikit-learn
-ydata-profiling
-xgboost
-dill
-streamlit
-gdown
