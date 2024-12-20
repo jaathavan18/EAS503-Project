@@ -1,0 +1,2 @@
+For part A, if the system doesn't have file "haarcascade_frontalface_alt.xml", please install it 
+from https://github.com/opencv/opencv/tree/master/data/haarcascades

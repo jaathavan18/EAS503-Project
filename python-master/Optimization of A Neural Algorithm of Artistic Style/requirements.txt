@@ -1,0 +1,7 @@
+Image
+numpy
+keras
+Pillow  # provides PIL
+scipy==1.1
+opencv-python==4.0.0
+tensorflow-gpu >= 1.0,<2.0  # installs tensorflow with GPU support, should still work even without GPU
