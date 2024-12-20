@@ -39,6 +39,14 @@ JOIN storage_specs st ON p.phone_id = st.phone_id
 df_db = pd.read_sql_query(query, conn)
 conn.close()
 
+# Define original columns (from the SQL query)
+original_columns = [
+    'phone_id', 'battery_power', 'clock_speed', 'm_dep', 'mobile_wt',
+    'n_cores', 'ram', 'talk_time', 'price_range', 'px_height', 'px_width',
+    'sc_h', 'sc_w', 'front_camera', 'primary_camera', 'blue', 'dual_sim',
+    'four_g', 'three_g', 'touch_screen', 'wifi', 'int_memory'
+]
+
 # Create a copy of the dataset to apply cleanup tasks
 cleaned_data = df_db.copy()
 
