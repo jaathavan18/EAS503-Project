@@ -1,0 +1,11 @@
+Experiment,Model,F1,Accuracy,Overfitting
+Experiment 1,Logistic Regression,0.82417510723282,0.8233830845771144,False
+Experiment 2,Logistic Regression,0.7717414529914529,0.7736318407960199,False
+Experiment 2,Ridge Classifier,0.48421764398326894,0.5646766169154229,False
+Experiment 2,Random Forest,0.7896739947443586,0.7885572139303483,True
+Experiment 2,XGBoost,0.7703330474082484,0.7686567164179104,True
+Experiment 3,Random Forest,0.7896739947443586,0.7885572139303483,False
+Experiment 4,Logistic Regression with Feature Selection,0.2199091073294071,0.21890547263681592,False
+Experiment 5,Logistic Regression,0.5890774702895658,0.6318407960199005,False
+Experiment 6,Gradient Boosting,0.7808039482813482,0.7786069651741293,False
+Experiment 7,Random Forest with PCA,0.921958524033011,0.9203980099502488,False
